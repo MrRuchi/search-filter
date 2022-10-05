@@ -1,15 +1,24 @@
+#root,html,body{
+  margin: 0;
+  padding: 0;
+}
 .app {
-    margin: 50px;
+    margin: 0;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 900px;
+    justify-content: center;
+    background: linear-gradient(90deg,#410076,#8820dd);
   }
   
   
   .search {
+    margin-top: 50px;
     padding: 10px;
     font-size: 20px;
+    border-radius: 10px;
+    border: .5px solid white;
   }
   
   .list {
@@ -27,9 +36,10 @@
   
   table {
     width: 100%;
-    margin: 50px 0px;
+    padding: 30px;
+    margin: 50px 10px;
     border-spacing: 15px;
-    color: #444;
+    color:aliceblue;
   }
   
   tr {
@@ -39,10 +49,12 @@
   th {
     width: 250px;
     text-align: left;
-    font-size: 20px;
+    font-size: 30px;
+    
   }
   
   td {
     width: 250px;
     font-size: 20px;
+   
   }

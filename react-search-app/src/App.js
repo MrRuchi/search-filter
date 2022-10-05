@@ -1,6 +1,5 @@
-import "./App.css";
 import "./app1.css";
-import { Users } from "./user";
+//import { Users } from "./user";
 import Table from "./Table";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
@@ -32,7 +31,8 @@ function App() {
       const res = await axios.get(`http://localhost:5000?q=${query}`);
       setData(res.data);
     };
-    if (query.length == 0 || query.length > 2) fetchUsers();
+    // if (query.length === 0 || query.length > 2) fetchUsers();
+    fetchUsers();
   }, [query]);
 
   return (
